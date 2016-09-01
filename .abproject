@@ -1,0 +1,45 @@
+{
+  "ProjectName": "Securitas",
+  "ProjectGuid": "ddef1d9c-8cde-4a37-b461-90e56bb738f6",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.Securitas",
+  "DisplayName": "Securitas",
+  "Author": "",
+  "Description": "Securitas",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "4.0.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{26ae0741-9098-4804-8616-5de0b3dacd9d}",
+  "WP8ProductID": "{a41f3979-fee0-4b85-8f0e-e56ae467371b}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.Securitas",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}

@@ -1,0 +1,64 @@
+<div data-role="view" data-title="Home" data-layout="main" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow" data-reload="true" data-use-native-scrolling="true">
+    <div class="about-view" data-bind="invisible:error">
+        <div class="icon-group">
+
+
+            <div class="app-details">
+                <h2>Employee center</h2>
+                <h4>Version 1</h4>
+            </div>
+        </div>
+			
+        <p>Here you can register your shifts and see your schedule after you have authenticated with your user credentials.</p>
+        
+        <div id="scheduler">
+            
+        </div>
+
+        <div class="button-group button-group-vertical">
+            <a data-role="button" data-rel="external" href="mailto:employees@securitas.de">Contact us</a>
+        </div>
+        <!-- START_CUSTOM_CODE_homeModel -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+        <!-- END_CUSTOM_CODE_homeModel -->
+    </div>
+
+    <!-- START_CUSTOM_CODE_home -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+    <script>
+        $("#scheduler").kendoScheduler({
+            height: "800",
+            selectable: true,
+            views: [
+                "day",
+                "workWeek",
+                {
+                    type: "agenda",
+                    selected: true
+                },
+                "week",
+                "month"
+            ],
+
+            resources: [{
+                field: "Employees", // The field of the scheduler event which contains the resource identifier
+                title: "Employees", // The label displayed in the scheduler edit form for this resource
+                dataSource: [{
+                    text: "Employee ID 1", // Text of the resource instance
+                    value: 1, // Identifier of the resource instance, use that value to assign an event to this instance.
+                    color: "#ff0000" // Used as the background of events assigned to this resource.
+                },
+                {
+                    text: "Employee ID 2", // Text of the resource instance
+                    value: 1, // Identifier of the resource instance, use that value to assign an event to this instance.
+                    color: "#ff0000" // Used as the background of events assigned to this resource.
+                }],
+                multiple: false, // Indicate the this is a multiple instance resource
+                location: true
+            }]
+
+        });
+    </script>
+    <!-- END_CUSTOM_CODE_home -->
+</div>
